@@ -16,10 +16,11 @@ public class Sequence : MonoBehaviour
     public Animator animator;
     public AudioSource audioSource;
     public Camera mainCamera;
+    public int currentActionIndex = 0;  // Index to keep track of the current action
+
     public bool LoopSequence;
 
     public List<SequenceAction> sequenceActions;  // List to store the sequence of actions
-    public int currentActionIndex = 0;  // Index to keep track of the current action
 
     private void Start()
     {
